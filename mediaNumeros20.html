@@ -1,0 +1,28 @@
+
+<script>
+
+    var qtde = parseInt(prompt("Quantidade de numeros?"));
+    while (isNaN(qtde) == true) {
+        qtde = parseInt(prompt("Digite um valor em formato numeral!"));
+    }
+    
+    var somaNumeros = 0;
+    var contador = 1
+    while(contador <= qtde) {
+   
+        var numero = parseInt(prompt("Informe o numero " + contador));
+        while (isNaN(numero) == true) {
+            numero = parseInt(prompt("Informe o numero " + contador + " em formato numeral!"));
+        }
+        somaNumeros = somaNumeros + numero;
+        contador++;
+    
+    }
+    var media = somaNumeros/qtde
+    alert("A média dos numeros é " + media);
+           
+    
+</script>
+
+
+
